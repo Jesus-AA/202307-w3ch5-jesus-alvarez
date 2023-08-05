@@ -10,8 +10,7 @@ export class Header extends Component {
 
 	createTemplate() {
 		return `<header id='main-header'>
-    <h1 class="main-title">PokéAPI</h1>
-				<h2 class="second-title">Gotta Catch 'Em All</h2>
+				<img class="poke-title" src="./public/Pokémon_Gotta_catch_em_all_logo.png" alt="The Pokémon Logo and Slogan">
     </header>`;
 	}
 }
