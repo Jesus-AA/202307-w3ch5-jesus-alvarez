@@ -5,10 +5,13 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build.ts": "tsc && vite build",
+    "build": "tsc && vite build",
     "preview": "vite preview",
-    "build": "tsc --watch",
-    "sass": "sass sass:css --watch"
+    "test": "jest",
+    "test:prod": "jest --watchAll --coverage --watchAll=false --passWithNoTests",
+    "test:w": "jest --watchAll --coverage --collectCoverageFrom=src/todo/**/*.{ts,tsx}",
+    "test:fast": "jest --watchAll --coverage",
+    "build:ts": "tsc --watch"
   },
   "devDependencies": {
     "@types/jest": "^29.5.3",
@@ -27,5 +30,8 @@
   },
   "dependencies": {
     "sass": "^1.64.2"
+  },
+  "prettier": {
+    "singleQuote": true
   }
 }
