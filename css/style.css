@@ -1,0 +1,83 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.main-div {
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1rem;
+  align-items: center;
+  background-color: #ef5350;
+}
+
+.poke-title {
+  width: 22rem;
+}
+
+main {
+  text-decoration: none;
+  padding: 2rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer {
+  font-family: "Sora", sans-serif;
+  background-color: #ef5350;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+
+ul {
+  display: flex;
+  text-decoration: none;
+  gap: 3rem;
+  align-items: center;
+  font-family: "Sora", sans-serif;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+ul li {
+  text-decoration: none;
+  border: 2px solid #ef5350;
+  border-radius: 15px;
+  height: 15rem;
+  width: 15rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.pokemon-name {
+  font-weight: 800;
+  font-size: 2rem;
+  color: #ffcb08;
+  padding-top: 1rem;
+}
+
+p {
+  text-decoration: none;
+}
+
+.pokemon-pic {
+  padding: 1rem;
+}
+
+/*# sourceMappingURL=style.css.map */
