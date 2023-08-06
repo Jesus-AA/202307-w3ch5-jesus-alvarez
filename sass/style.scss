@@ -26,7 +26,7 @@ header {
 
 main {
 	text-decoration: none;
-	padding: 3rem 3rem;
+	padding: 2rem 2rem;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -52,7 +52,8 @@ ul {
 	justify-content: center;
 	li {
 		text-decoration: none;
-		border: 1px solid #ef5350;
+		border: 2px solid #ef5350;
+		border-radius: 15px;
 		height: 15rem;
 		width: 15rem;
 		display: flex;
@@ -68,8 +69,13 @@ ul {
 	font-weight: 800;
 	font-size: 2rem;
 	color: #ffcb08;
+	padding-top: 1rem;
 }
 
 p {
 	text-decoration: none;
+}
+
+.pokemon-pic {
+	padding: 1rem;
 }

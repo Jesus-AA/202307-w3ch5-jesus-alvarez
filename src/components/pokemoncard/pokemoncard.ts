@@ -19,13 +19,11 @@ export class PokemonCard extends Component {
 		this.render();
 	}
 
-	getPokemonImage() {}
-
 	createTemplate() {
 		const pokemonList = this.pokemon
 			.map(
 				(item) => `
-		<li><p class="pokemon-name">${item.name}</p><p class="pokemon-picture">${item.sprites}</p></li>`
+		<li><p class="pokemon-name">${item.name}</p><img class="pokemon-pic" src="${item.sprites.front_default}" alt="A pokemon picture" width="150px"></li>`
 			)
 			.join('');
 
