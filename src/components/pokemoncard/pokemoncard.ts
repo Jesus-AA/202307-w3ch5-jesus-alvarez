@@ -10,10 +10,10 @@ export class PokemonCard extends Component {
 		super(selector);
 		this.pokemon = [];
 		this.repository = new PokemonAPI();
-		this.handleLoad();
+		this.loading();
 	}
 
-	async handleLoad() {
+	async loading() {
 		this.pokemon = await this.repository.getPokemonInfo();
 		this.template = this.createTemplate();
 		this.render();
