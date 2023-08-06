@@ -1,3 +1,8 @@
+/* eslint-disable @typescript-eslint/comma-dangle */
+/* eslint-disable @typescript-eslint/object-curly-spacing */
+/* eslint-disable @typescript-eslint/no-unsafe-call */
+/* eslint-disable @typescript-eslint/no-unsafe-assignment */
+// eslint-disable-next-line @typescript-eslint/naming-convention
 export class PokemonAPI {
 	url: string;
 	constructor() {
@@ -8,16 +13,18 @@ export class PokemonAPI {
 		const response = await fetch(this.url);
 
 		const result = await response.json();
-		console.log(result);
+
 		const pokemonInfo = await Promise.all(
 			result.results.map(async (item: { url: string }) => {
 				const singlePokemonUrl = item.url;
 				const response = await fetch(singlePokemonUrl);
 				const pokemonData = await response.json();
 
+				// eslint-disable-next-line @typescript-eslint/no-unsafe-return
 				return pokemonData;
 			})
 		);
+		// eslint-disable-next-line @typescript-eslint/no-unsafe-return
 		return pokemonInfo;
 	}
 }

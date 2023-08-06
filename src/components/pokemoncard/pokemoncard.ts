@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/comma-dangle */
+/* eslint-disable @typescript-eslint/object-curly-spacing */
 import { Component } from '../component.js';
 import { PokemonAPI } from '../data/pokemonapi.js';
 import { type PokemonType } from '../pokemonmodel/pokemonclass.js';
@@ -10,10 +12,11 @@ export class PokemonCard extends Component {
 		super(selector);
 		this.pokemon = [];
 		this.repository = new PokemonAPI();
-		this.loading();
+		void this.loading();
 	}
 
 	async loading() {
+		// eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
 		this.pokemon = await this.repository.getPokemonInfo();
 		this.template = this.createTemplate();
 		this.render();
